@@ -29,8 +29,12 @@ app.get('/', (req, res) => {
 
 // Test Supabase connection
 testSupabaseConnection();
-module.export = app;
 
+//for vercel deployment
+module.exports = app;
+
+
+//for local host
 //const PORT = 3000;
 //app.listen(PORT, () => {
 //    console.log(`🚀 Server running on http://localhost:${PORT}`);
