@@ -1,11 +1,11 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import userRoutes from '../routes/userRoutes.js';
-import ticketRoutes from '../routes/ticketRoutes.js';
-import authRoutes from "../routes/authRoutes.js";
-import testRoutes from "../routes/testRoutes.js"; 
-import { testSupabaseConnection } from '../config/db.js';
+import userRoutes from './routes/userRoutes.js';
+import ticketRoutes from './routes/ticketRoutes.js';
+import authRoutes from "./routes/authRoutes.js";
+import testRoutes from "./routes/testRoutes.js"; 
+import { testSupabaseConnection } from './config/db.js';
 
 // Load environment variables from .env file
 dotenv.config();
