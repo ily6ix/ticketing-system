@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Ticketing System backend",
   "type": "module",
-  "main": "api/index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node api/index.js",
+    "start": "node src/server.js",
     "dev": "nodemon src/server.js"
   },
   "keywords": [],
