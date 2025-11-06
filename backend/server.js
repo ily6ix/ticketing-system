@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 
 // Test Supabase connection
 testSupabaseConnection();
-module.export = app;
+module.exports = app;
 
 //const PORT = 3000;
 //app.listen(PORT, () => {
