@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors';
 import userRoutes from './routes/userRoutes.js';
@@ -16,10 +17,10 @@ app.use(cors());
 app.use(express.json()); // to parse JSON bodies
 
 // Routes
-app.use('/api/users', userRoutes);
-app.use("/api/auth", authRoutes);
-app.use('/api/tickets', ticketRoutes);
-app.use("/api/test", testRoutes);
+app.use('/users', userRoutes);
+app.use("/auth", authRoutes);
+app.use('/tickets', ticketRoutes);
+app.use("/test", testRoutes);
 
 // Test route
 app.get('/', (req, res) => {
