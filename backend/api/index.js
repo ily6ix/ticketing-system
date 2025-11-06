@@ -23,7 +23,7 @@ app.use("/api/test", testRoutes);
 
 // Test route
 app.get('/', (req, res) => {
-    res.send('Server is running ✅');
+    res.send('Server is running ');
 });
 
 // Test Supabase connection
